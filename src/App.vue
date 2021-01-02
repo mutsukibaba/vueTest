@@ -1,31 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div 
+      id="nav" 
+      class="tab-area-base">
+      <ul class="tab-menu-base">
+        <!-- `router.js` で定義したルーティングルールとの紐付けを行っている -->
+        <li><router-link to="/">Home</router-link></li>
+        <!-- *** -->
+        <!-- 省略 -->
+        <!-- *** -->
+        <li><router-link to="/routing">Rounting Testtesttest</router-link></li>
+      </ul>
+    </div>
+    <router-view />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+// ▼ ここから削除 ( ルーティングによって不要となるため )
+//<script>
+//import HelloWorld from './components/HelloWorld.vue'
+//
+//export default {
+//  name: 'App',
+//  components: {
+//    HelloWorld
+//  }
+//}
+//</script>
+// ▲ ここまで削除
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-
-//testS
-
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+// スタイルは割愛
