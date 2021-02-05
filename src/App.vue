@@ -1,16 +1,9 @@
 <template>
   <div id="app">
-    <div 
-      id="nav" 
-      class="tab-area-base">
-      <ul class="tab-menu-base">
+    <div id="nav">
         <!-- `router.js` で定義したルーティングルールとの紐付けを行っている -->
-        <li><router-link to="/">Home</router-link></li>
-        <!-- *** -->
-        <!-- 省略 -->
-        <!-- *** -->
-        <li><router-link to="/routing">Rounting Testtesttest</router-link></li>
-      </ul>
+      <router-link to="/">Home    </router-link>
+      <router-link to="/routing">Rounting Test</router-link>
     </div>
     <router-view />
   </div>
@@ -18,15 +11,7 @@
 
 // ▼ ここから削除 ( ルーティングによって不要となるため )
 //<script>
-//import HelloWorld from './components/HelloWorld.vue'
-//
-//export default {
-//  name: 'App',
-//  components: {
-//    HelloWorld
-//  }
-//}
-//</script>
-// ▲ ここまで削除
 
-// スタイルは割愛
+<style lang="scss">
+
+</style>
