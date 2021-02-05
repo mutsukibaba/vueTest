@@ -3,6 +3,7 @@
     <div :class="$style.child">
       <h1>Routing Test Page</h1>
     </div>
+    aaaaaaaaaaaS
   </div>
 </template>
 
